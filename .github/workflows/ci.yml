@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # CI non-bloquante : on formate pour éviter les échecs sur des détails.
+      # (Le repo reste statique, donc pas de build.)
+      - name: Prettier (write)
+        run: |
+          npx --yes prettier@3.3.3 --write "**/*.{html,css,js,md,yml,yaml}" --ignore-unknown
+
+      - name: Show diff (if any)
+        run: |
+          git diff --stat || true

@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon de manucure • Île-de-France • Pink & Strass</title>
+    <meta
+      name="description"
+      content="Salon de manucure en Île-de-France : nails, gel, semi-permanent, nail art strass. Ambiance très pink, très girly. Sur rendez-vous."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="logo" href="#top" aria-label="Retour en haut">
+        <span class="logo__script">Pink</span>
+        <span class="logo__caps">NAILS</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#prestations">Prestations</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact" class="nav__cta">Réserver</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="sparkles"></div>
+        </div>
+
+        <div class="container hero__content">
+          <p class="pill">Île-de-France • sur RDV • 💅 gel / semi / nail art</p>
+          <h1>
+            Manucure très <span class="glow">girly</span>, très <span class="glow">pink</span>, très
+            <span class="glow">strass</span>.
+          </h1>
+          <p class="lead">
+            Des ongles propres, brillants, et un nail art qui se voit de loin. Une vibe “bitch mais
+            sympa” : confiance, douceur, et résultat nickel.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Réserver un créneau</a>
+            <a class="btn btn--ghost" href="#galerie">Voir les sets</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Infos rapides">
+            <div class="stat">
+              <div class="stat__value">+200</div>
+              <div class="stat__label">clientes happy</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">IDF</div>
+              <div class="stat__label">proche transports</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">Strass</div>
+              <div class="stat__label">à la demande</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="prestations">
+        <div class="container">
+          <div class="section__head">
+            <h2>Prestations</h2>
+            <p>Tout ce qu’il faut pour passer de “cute” à “iconic”.</p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">✨</div>
+              <h3>Gel / Renfort</h3>
+              <p>Construction propre, solidité, et bombé parfait. Finition glossy miroir.</p>
+              <ul class="list">
+                <li>capsules / chablon</li>
+                <li>forme au choix (amande, carré, coffin…)</li>
+                <li>strass en option</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">💗</div>
+              <h3>Semi-permanent</h3>
+              <p>Pour des mains nettes et brillantes sans prise de tête.</p>
+              <ul class="list">
+                <li>prépa cuticules</li>
+                <li>tenue longue durée</li>
+                <li>babyboomer, french, chrome</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">💎</div>
+              <h3>Nail art strass</h3>
+              <p>Le moment “bling”: lignes, 3D, charms, chrome, aura nails…</p>
+              <ul class="list">
+                <li>de minimal à full glam</li>
+                <li>sur devis selon complexité</li>
+                <li>inspo bienvenue</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="banner">
+            <div>
+              <h3>Hygiène & qualité</h3>
+              <p>Matériel désinfecté, outils stérilisés, produits pro. On veut du beau et du safe.</p>
+            </div>
+            <a class="btn btn--secondary" href="#contact">Poser une question</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="tarifs">
+        <div class="container">
+          <div class="section__head">
+            <h2>Tarifs</h2>
+            <p>Clairs, sans surprise. (Les strass = selon mood.)</p>
+          </div>
+
+          <div class="pricing">
+            <article class="price">
+              <h3>Semi-permanent</h3>
+              <p class="price__value">à partir de <strong>35€</strong></p>
+              <ul class="list">
+                <li>prépa + couleur</li>
+                <li>french / babyboomer (+)</li>
+                <li>dépose (+)</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact">Je réserve</a>
+            </article>
+
+            <article class="price price--featured">
+              <div class="price__badge">Bestie choice</div>
+              <h3>Gel / Construction</h3>
+              <p class="price__value">à partir de <strong>55€</strong></p>
+              <ul class="list">
+                <li>forme sur mesure</li>
+                <li>gloss / chrome (+)</li>
+                <li>nail art (+)</li>
+              </ul>
+              <a class="btn btn--secondary" href="#contact">Je prends le pack glam</a>
+            </article>
+
+            <article class="price">
+              <h3>Full Nail Art</h3>
+              <p class="price__value">à partir de <strong>15€</strong></p>
+              <ul class="list">
+                <li>strass / charms</li>
+                <li>3D / aura / lignes</li>
+                <li>sur devis si complexe</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact">Je veux du bling</a>
+            </article>
+          </div>
+
+          <p class="note">
+            Astuce : envoie ton inspo (photo / Pinterest) avant le RDV pour qu’on te donne un prix
+            précis.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="galerie">
+        <div class="container">
+          <div class="section__head">
+            <h2>Galerie</h2>
+            <p>Des idées de sets : glossy, chrome, strass, et pink attitude.</p>
+          </div>
+
+          <div class="masonry" aria-label="Galerie de sets (illustrations)">
+            <button
+              class="shot"
+              type="button"
+              data-title="Pink chrome + strass"
+              data-desc="Chrome rose, reflets miroir, et strass en accent."
+              aria-label="Voir le set Pink chrome + strass"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">Pink chrome + strass</span>
+            </button>
+            <button
+              class="shot shot--dark"
+              type="button"
+              data-title="French ultra glossy"
+              data-desc="French propre, bombé parfait, finition glass."
+              aria-label="Voir le set French ultra glossy"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">French ultra glossy</span>
+            </button>
+            <button
+              class="shot shot--pop"
+              type="button"
+              data-title="Aura nails"
+              data-desc="Dégradé aura, vibes Y2K, détails pailletés."
+              aria-label="Voir le set Aura nails"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">Aura nails</span>
+            </button>
+            <button
+              class="shot shot--soft"
+              type="button"
+              data-title="Nude + micro strass"
+              data-desc="Minimal mais luxe: nude propre, micro strass."
+              aria-label="Voir le set Nude + micro strass"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">Nude + micro strass</span>
+            </button>
+            <button
+              class="shot shot--glitter"
+              type="button"
+              data-title="Full glitter"
+              data-desc="Paillettes qui flashent, parfait soirée."
+              aria-label="Voir le set Full glitter"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">Full glitter</span>
+            </button>
+            <button
+              class="shot shot--ruby"
+              type="button"
+              data-title="Red & charms"
+              data-desc="Rouge profond, charms, statement nails."
+              aria-label="Voir le set Red & charms"
+            >
+              <span class="shot__shine" aria-hidden="true"></span>
+              <span class="shot__label">Red & charms</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="avis">
+        <div class="container">
+          <div class="section__head">
+            <h2>Avis</h2>
+            <p>Des retours de clientes (exemples — à remplacer par les vrais).</p>
+          </div>
+
+          <div class="grid testimonials">
+            <figure class="quote">
+              <blockquote>
+                “J’ai demandé full pink + strass, elle a compris la mission. Tenue parfaite, et
+                ambiance trop douce.”
+              </blockquote>
+              <figcaption>— Lina, 93</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                “Prépa super propre, zéro douleur, et le chrome est insane. Je reviens chaque mois.”
+              </blockquote>
+              <figcaption>— Sarah, 75</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                “J’avais une inspo Pinterest impossible, elle l’a refaite mieux. Queen.”
+              </blockquote>
+              <figcaption>— Inès, 92</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contact & Réservation</h2>
+            <p>Dis-moi la date, la presta, et ton inspo. Je te réponds vite.</p>
+          </div>
+
+          <div class="contact">
+            <form class="form" id="bookingForm">
+              <div class="form__row">
+                <label>
+                  Nom
+                  <input name="name" autocomplete="name" required placeholder="Ton prénom" />
+                </label>
+                <label>
+                  Téléphone
+                  <input name="phone" autocomplete="tel" required placeholder="06…" />
+                </label>
+              </div>
+              <div class="form__row">
+                <label>
+                  Prestation
+                  <select name="service" required>
+                    <option value="">Choisir…</option>
+                    <option>Semi-permanent</option>
+                    <option>Gel / Construction</option>
+                    <option>Remplissage</option>
+                    <option>Nail art</option>
+                    <option>Dépose</option>
+                  </select>
+                </label>
+                <label>
+                  Date souhaitée
+                  <input type="date" name="date" required />
+                </label>
+              </div>
+              <label>
+                Message / Inspo
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Décris ton set (forme, couleur, strass…) + lien Insta/Pinterest si tu veux"
+                ></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--secondary" type="submit">Envoyer la demande</button>
+                <p class="tiny">
+                  Envoi via ton app mail (pas de stockage de données). Tu peux aussi mettre ton lien
+                  Instagram / WhatsApp ici.
+                </p>
+              </div>
+
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="panel">
+              <h3>Infos</h3>
+              <ul class="info">
+                <li><strong>Zone :</strong> Île-de-France (à préciser)</li>
+                <li><strong>Horaires :</strong> Lun–Sam • 10h–19h</li>
+                <li><strong>Réservation :</strong> DM / mail / téléphone</li>
+              </ul>
+
+              <div class="panel__cta">
+                <a
+                  class="btn btn--primary"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+                <a class="btn btn--ghost" href="tel:+33600000000">Appeler</a>
+              </div>
+
+              <div class="map" aria-label="Carte (placeholder)">
+                <div class="map__pin" aria-hidden="true"></div>
+                <p>
+                  Ajoute ici une vraie carte Google Maps / Plan (ou juste l’adresse).
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <p>
+            © <span id="year"></span> Pink Nails — Île-de-France. Fait avec beaucoup de rose et un
+            peu de strass.
+          </p>
+          <div class="footer__links">
+            <a href="#top">Haut</a>
+            <a href="#contact">Réserver</a>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        class="modal"
+        id="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Aperçu galerie"
+      >
+        <div class="modal__backdrop" data-close="true"></div>
+        <div class="modal__panel" role="document">
+          <button class="modal__close" type="button" data-close="true" aria-label="Fermer">
+            ×
+          </button>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
