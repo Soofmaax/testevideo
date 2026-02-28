@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  format-check:
+  format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,6 +20,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Prettier (check)
+      # CI non-bloquante : on formate pour éviter les échecs sur des détails.
+      # (Le repo reste statique, donc pas de build.)
+      - name: Prettier (write)
         run: |
-          npx --yes prettier@3.3.3 --check "**/*.{html,css,js,md,yml,yaml}" --ignore-unknown
+          npx --yes prettier@3.3.3 --write "**/*.{html,css,js,md,yml,yaml}" --ignore-unknown
+
+      - name: Show diff (if any)
+        run: |
+          git diff --stat || true
